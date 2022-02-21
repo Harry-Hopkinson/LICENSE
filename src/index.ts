@@ -25,4 +25,5 @@ const configFolderPath = path.resolve(__dirname, "config");
 	]);
 	const folderPath = path.join(process.cwd(), "LICENSE");
 	await writeFile(folderPath, configFiles[language]).catch(console.log);
+	console.log("Your LICENSE has been Created 🎉");
 })();
