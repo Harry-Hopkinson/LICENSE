@@ -3,7 +3,6 @@
 		"target": "esnext",
 		"module": "commonjs",
 		"rootDir": "./src",
-		"outDir": "dist",
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,

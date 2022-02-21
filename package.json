@@ -1,9 +1,9 @@
 {
 	"name": "github-license",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "A NPM Package that creates a LICENSE of your choice.",
-	"main": "dist/index.js",
-	"bin": "dist/index.js",
+	"main": "src/index.js",
+	"bin": "src/index.js",
 	"scripts": {
 		"compile": "tsc",
 		"build": "tsc",
