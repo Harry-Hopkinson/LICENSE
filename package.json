@@ -1,0 +1,35 @@
+{
+	"name": "license",
+	"version": "1.0.0",
+	"description": "A NPM Package that creates a LICENSE of your choice.",
+	"main": "dist/index.js",
+	"bin": "dist/index.js",
+	"scripts": {
+		"compile": "tsc",
+		"build": "tsc",
+		"watch": "tsc -w"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Harry-Hopkinson/LICENSE.git"
+	},
+	"keywords": [
+		"cli",
+		"command-line",
+		"generator",
+		"LICENSE"
+	],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Harry-Hopkinson/LICENSE/issues"
+	},
+	"homepage": "https://github.com/Harry-Hopkinson/LICENSE#readme",
+	"devDependencies": {
+		"@types/node": "^17.0.18"
+	},
+	"dependencies": {
+		"fs": "^0.0.1-security",
+		"inquirer": "^8.2.0"
+	}
+}
