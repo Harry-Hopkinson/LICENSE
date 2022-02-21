@@ -9,16 +9,20 @@ const configFolderPath = path.resolve(__dirname, "config");
 	const files = await readdir(configFolderPath).catch(console.log);
 
 	for (let i of files) {
-		const licenseName = i.split(".")[0];
-		configFiles[licenseName] = path.join(configFolderPath, i);
+		const fileName = i.split(".")[0];
+		configFiles[fileName] = await readFile(
+			path.resolve(configFolderPath, i)
+		).catch(console.log);
 	}
 
-	const { LICENSE } = await inquirer.prompt([
+	const { language } = await inquirer.prompt([
 		{
 			type: "list",
-			message: "Which LICENSE do you want to generate?",
-			name: "license",
+			message: "Which License to Generate?",
+			name: "language",
 			choices: Object.keys(configFiles),
 		},
 	]);
+	const folderPath = path.join(process.cwd(), "LICENSE");
+	await writeFile(folderPath, configFiles[language]).catch(console.log);
 })();
