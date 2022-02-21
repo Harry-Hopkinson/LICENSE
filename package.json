@@ -1,6 +1,6 @@
 {
-	"name": "license",
-	"version": "1.0.0",
+	"name": "github-license",
+	"version": "1.0.1",
 	"description": "A NPM Package that creates a LICENSE of your choice.",
 	"main": "dist/index.js",
 	"bin": "dist/index.js",
